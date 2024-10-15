@@ -4,8 +4,8 @@
 }
 body{
     background-image: url("./assests/background.webp");
-    background-size: min(100vw);
-    background-repeat: none;
+    background-size: cover;
+    background-position: center;
 }
 main{
     display: flex;
@@ -93,6 +93,9 @@ button img{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.main img{
+    filter: drop-shadow(0px 0 0px rgba(0, 0, 0, 0.5));    
 }
 .city{
     font-size: 25px;
