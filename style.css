@@ -107,7 +107,7 @@ button img{
 }
 @media screen and (max-width: 900px){
     body{
-        background-size: 100vh;
+        background-size: 100%;
     }
 }
 @media screen and (max-width: 400px){
