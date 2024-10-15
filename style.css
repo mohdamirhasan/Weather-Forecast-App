@@ -3,9 +3,9 @@
     padding: 0;
 }
 body{
-    background-image: url("./assests/pexels-jplenio-1118873.jpg");
-    background-size: max(1600px, 100vw);
-    background-position: center;
+    background-image: url("./assests/background.webp");
+    background-size: min(100vw);
+    background-repeat: none;
 }
 main{
     display: flex;
@@ -104,6 +104,11 @@ button img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+@media screen and (max-width: 900px){
+    body{
+        background-size: 100vh;
+    }
 }
 @media screen and (max-width: 400px){
     .box{
