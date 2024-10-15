@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="box" id="box">
+            <div class="heading">Weather Forecast</div>
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name" id="input" autocomplete="off">
+                <div class="search-icon" id="search">
+                    <button class="search"><img src="./assests/kindpng_254250.png" width="18px"></button>
+                </div>
+            </div>
+            <div class="error" id="error">
+                <img src="./assests/not_found.png" alt="" width="250px">
+                <div>City not Found!</div>
+            </div>
+            <div class="info" id="info">
+                <div class="main">
+                    <div class="city" id="city"></div>
+                    <div class="temp" id="temp"></div>
+                    <img id="weather-icon" src="" width="95px">
+                </div>
+                <div class="extra">
+                    <div class="descrip" id="descrip"></div>
+                    <div class="speed" id="speed"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

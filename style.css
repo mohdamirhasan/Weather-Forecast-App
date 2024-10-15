@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./assests/pexels-jplenio-1118873.jpg");
+    background-size: max(1600px, 100vw);
+    background-position: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+.box{
+    padding: 50px;
+    height: max-content;
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.587);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    gap: 20px;
+}
+.box .search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .search-box input{
+    border: none;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    border-style: none;
+}
+input:focus{
+    outline: none;
+}
+.box .search-box .search-icon{
+    background-color: rgb(53, 175, 53);
+    border-radius: 0 50px 50px 0;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+button img{
+    background-color: rgb(53, 175, 53);
+}
+.search-box ::placeholder{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: display 0.5s linear;
+}
+.error{
+    font-size: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.city{
+    font-size: 25px;
+}
+.extra{
+    padding: 10px;
+    font-size: small;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width: 400px){
+    .box{
+        width: 240px;
+        padding: 35px;
+    }
+}
